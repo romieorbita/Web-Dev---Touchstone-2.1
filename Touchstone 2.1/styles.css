@@ -1,213 +1,43 @@
+/* Reset & Base Styles */
 
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 30px;
-      background-color: #f8f8f8;
-    }
-
-    nav a {
-      margin: 0 10px;
-      text-decoration: none;
-    }
-
-    .logo {
-      text-align: center;
-      padding: 20px;
-      background: #ddd;
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-
-    .main-section {
-      display: flex;
-      justify-content: space-between;
-      padding: 20px;
-    }
-
-    .main-section .column {
-      width: 30%;
-      background: #eee;
-      padding: 10px;
-      text-align: center;
-    }
-
-    .info-center {
-      width: 30%;
-      text-align: center;
-    }
-
-    .features {
-      background: #ddd;
-      padding: 20px;
-      display: flex;
-      justify-content: space-around;
-      text-align: center;
-    }
-
-    .features div {
-      width: 30%;
-    }
-
-    .classes {
-      display: flex;
-      justify-content: space-around;
-      padding: 20px;
-    }
-
-    .classes div {
-      width: 30%;
-      background: #eee;
-      text-align: center;
-      padding: 10px;
-    }
-
-    footer {
-      background-color: #e0e0e0;
-      padding: 20px;
-      font-size: 0.9rem;
-    }
-
-    .footer-top,
-    .footer-bottom {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 0;
-    }
-
-    .newsletter input[type="text"] {
-      margin-left: 10px;
-      padding: 5px;
-    }
-
-    .links a {
-      margin: 0 5px;
-      text-decoration: none;
-    }
-
-    <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    /* Header */
-    header {
-      background-color: #e0e0e0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 30px;
-    }
-
-    nav a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: black;
-    }
-
-    .logo {
-      text-align: center;
-      font-weight: bold;
-    }
-
-    /* Promo Banner */
-    .promo {
-      background: #fff;
-      text-align: center;
-      padding: 30px 10px;
-      font-size: 1.8rem;
-      font-weight: bold;
-      border-top: 1px solid #000;
-      border-bottom: 1px solid #000;
-    }
-
-    .promo span {
-      font-size: 1rem;
-      font-weight: normal;
-      margin-left: 10px;
-    }
-
-    /* About / Testimonials */
-    section {
-      padding: 30px;
-      border-bottom: 2px solid black;
-    }
-
-    section h2 {
-      margin-bottom: 10px;
-    }
-
-    /* Contact Form */
-    .contact {
-      padding: 30px;
-    }
-
-    .contact label {
-      display: block;
-      margin: 10px 0 5px;
-      font-weight: bold;
-    }
-
-    .contact input,
-    .contact textarea {
-      width: 300px;
-      padding: 8px;
-      margin-bottom: 10px;
-    }
-
-    /* Footer */
-    footer {
-      background: #e0e0e0;
-      font-size: 0.9rem;
-      padding: 20px;
-    }
-
-    .footer-top,
-    .footer-bottom {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      padding: 10px 0;
-    }
-
-    .newsletter input[type="text"] {
-      margin-left: 10px;
-      padding: 5px;
-    }
-
-    .links a {
-      margin: 0 5px;
-      text-decoration: none;
-    }
-    /* Reset some default styling */
+html,body{
+  Height:100%;
+  Width:100%;
+  
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  min-height: 15%;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+  display:flex;
+  flex-direction: column;
+  min-height: 100vh;
+  Height:100%;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #001F3F;
+  background-color: #634E99;
 }
 
-/* Header / Navbar */
-.navbar {
+/* Header */
+header, .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #f4f4f4;
-  padding: 1rem;
+  padding: 30px 30px;
+  background-color: #634e99;
+  width: 100%;
+  Height:5%;
+}
+
+.navbar {
+  background: #3a2b2b;
   border-bottom: 1px solid #ccc;
+  padding: 1rem;
 }
 
 .nav-left, .nav-right {
@@ -219,9 +49,22 @@ body {
   margin-right: 1rem;
 }
 
+nav a, .links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.links a {
+  margin: 0 5px;
+}
+
 .logo {
-  font-weight: bold;
   text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: #20458E;
+  padding: 20px;
 }
 
 /* Hero Section */
@@ -238,6 +81,103 @@ body {
 
 .app-description {
   font-weight: bold;
+}
+
+/* Main Section */
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px;
+}
+
+.main-section .column {
+  width: 30%;
+  height:auto;
+  background: #D3D3D3;
+  padding: 3px;
+  text-align: center;
+}
+
+.info-center {
+  width: 30%;
+  text-align: center;
+}
+
+/* Features Section */
+.features {
+  background: #20458E;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.features div {
+  width: 30%;
+  padding: 10px;
+  box-sizing: border-box;
+  gap: 20px;
+}
+
+/* Classes Section */
+.classes {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.classes div {
+  width: 30%;
+  background: #D3D3D3;
+  text-align: center;
+  padding: 3px;
+}
+.classes div p{
+  margin-bottom: 10px;
+}
+
+/* Promo Banner */
+.promo {
+  background: #fff;
+  text-align: center;
+  padding: 30px 10px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.promo span {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-left: 10px;
+}
+
+/* About / Testimonials Section */
+section {
+  padding: 30px;
+  border-bottom: 2px solid black;
+}
+
+section h2 {
+  margin-bottom: 10px;
+}
+
+/* Contact Form */
+.contact {
+  padding: 15px;
+}
+
+.contact label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+  width: 300px;
+  padding: 8px;
 }
 
 /* Steps Section */
@@ -289,10 +229,21 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #d3d3d3;
+  background: #20458E;
   padding: 1rem;
   font-size: 0.9rem;
   flex-wrap: wrap;
+  margin-top:auto;
+ 
+}
+
+.footer-top,
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 0;
 }
 
 .footer-left, .footer-center, .footer-right {
@@ -312,14 +263,6 @@ footer {
   cursor: pointer;
 }
 
-.footer-center a {
-  margin: 0 0.3rem;
-  color: #000;
-  text-decoration: none;
-}
-
 .footer-center a:hover {
   text-decoration: underline;
 }
-
-  </style>
