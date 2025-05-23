@@ -17,10 +17,9 @@ body {
   flex-direction: column;
   min-height: 100vh;
   Height:100%;
-  margin: 0;
   font-family: "Roboto", sans-serif;
   color: #001F3F;
-  background-color: #634E99;
+  
 }
 
 /* Header */
@@ -63,8 +62,13 @@ nav a, .links a {
   text-align: center;
   font-size: 1.5rem;
   font-weight: bold;
-  background: #20458E;
+  /*background: #20458E;*/
   padding: 20px;
+}
+
+.table{
+  background-color: #D3D3D3;
+  padding: 1;
 }
 
 /* Hero Section */
@@ -87,7 +91,7 @@ nav a, .links a {
 .main-section {
   display: flex;
   justify-content: space-between;
-  padding: 3px;
+  padding: 5px;
 }
 
 .main-section .column {
@@ -105,7 +109,7 @@ nav a, .links a {
 
 /* Features Section */
 .features {
-  background: #20458E;
+  /*background: #20458E;*/
   padding: 20px;
   display: flex;
   justify-content: space-around;
@@ -149,8 +153,9 @@ nav a, .links a {
 
 .promo span {
   font-size: 1rem;
-  font-weight: normal;
+  font-weight: bolder;
   margin-left: 10px;
+  background-color: #20458E;
 }
 
 /* About / Testimonials Section */
@@ -165,12 +170,12 @@ section h2 {
 
 /* Contact Form */
 .contact {
-  padding: 15px;
+  padding: 30px;
 }
 
 .contact label {
   display: block;
-  margin: 10px 0 5px;
+  
   font-weight: bold;
 }
 
@@ -229,7 +234,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #20458E;
+  background: #634E99;
   padding: 1rem;
   font-size: 0.9rem;
   flex-wrap: wrap;
